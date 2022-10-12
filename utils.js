@@ -1,7 +1,7 @@
 export const functionLength = (array, a) => {
-    array = [];
-    for (let i = 0; i >= array[5]; i++) {
+    array = [1, 2, 3, 4, 5, 3, 2, 5, 8];
+    for (let i = 0; array[i] !== undefined; i++) {
         a = i;
     }
-    console.log(a);
+    return a + 1;
 };
