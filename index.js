@@ -1,4 +1,3 @@
-// eslint-disable-next-line import/extensions
 import { functionLength } from './utils.js';
 
-functionLength();
+functionLength([1, 2, 3, 4, 5], 5);
