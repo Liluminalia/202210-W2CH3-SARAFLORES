@@ -14,6 +14,10 @@ export const functionPush = (value, array) => {
 };
 
 export const functionIndexOf = (array, value) => {
+    const arrayError = new Error('Error, el array esta vacio!');
+    if (array.length < 1) {
+        throw arrayError;
+    }
     let position;
     for (position of array) {
         position += 1;

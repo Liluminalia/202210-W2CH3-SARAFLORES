@@ -43,6 +43,25 @@ describe('given the array position of a value, if is in the array', () => {
         // Asset
         expect(result).toBe(3);
     });
+    test('when give 5 and the array have the 5 in the 3º position, the result should be 3', () => {
+        // Arrange
+
+        const arrayTest = [1, 7, 2, 5, 4];
+        const value = 17;
+
+        // Act
+        const result = functionIndexOf(arrayTest, value);
+        // Asset
+        expect(result).toBe(-1);
+    });
+    test('if the array is empty should throw an error', () => {
+        const arrayTest = [];
+        try {
+            functionIndexOf(arrayTest, 5);
+        } catch (e) {
+            expect(e.message).toBe('Error, el array esta vacio!');
+        }
+    });
 });
 
 describe('given true or false depending if an array have a concrete value', () => {
@@ -56,5 +75,16 @@ describe('given true or false depending if an array have a concrete value', () =
         const result = functionIncludes(arrayTest, value);
         // Asset
         expect(result).toBe(true);
+    });
+    test('when give 5 and the array have the 5 in it, the result should be true', () => {
+        // Arrange
+
+        const arrayTest = [1, 7, 2, 5, 4];
+        const value = 17;
+
+        // Act
+        const result = functionIncludes(arrayTest, value);
+        // Asset
+        expect(result).toBe(false);
     });
 });
