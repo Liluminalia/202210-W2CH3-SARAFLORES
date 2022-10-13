@@ -64,7 +64,7 @@ describe('given the array position of a value, if is in the array', () => {
     });
 });
 
-describe('given true or false depending if an array have a concrete value', () => {
+describe('giving true or false depending if an array have a concrete value', () => {
     test('when give 5 and the array have the 5 in it, the result should be true', () => {
         // Arrange
 
