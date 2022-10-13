@@ -15,7 +15,7 @@ export const functionPush = (value, array) => {
 
 export const functionIndexOf = (array, value) => {
     for (let position of array) {
-        position++;
+        position += 1;
         if (Object.is(array[position], value)) {
             return position;
         }
