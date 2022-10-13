@@ -24,8 +24,9 @@ export const functionIndexOf = (array, value) => {
 };
 
 export const functionIncludes = (array, value) => {
-    for (let j = 0; j < array.length; j++) {
-        if (Object.is(array[j], value)) {
+    for (let position of array) {
+        position += 1;
+        if (Object.is(array[position], value)) {
             return true;
         }
     }
